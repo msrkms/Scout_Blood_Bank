@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+
+    <EditText
+        android:id="@+id/editTextBloodGrp"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/Red"
+        android:hint=" Blood Group"
+        android:drawableLeft="@drawable/magnifier"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDivition"
+        android:layout_width="163dp"
+
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTextBloodGrp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:hint="Divition"
+        android:inputType="text"
+        android:background="@color/Gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextInput_thana"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:hint="Thana"
+        android:inputType="text"
+        android:background="@color/Gray"
+        app:layout_constraintStart_toEndOf="@+id/editTextDivition"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/input_dis"
+        android:layout_width="172dp"
+        android:layout_height="35dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:background="@color/Gray"
+        android:hint="District"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="135dp"
+        android:layout_height="53dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/darkyowll"
+        android:elevation="8dp"
+        android:text="search"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/input_dis"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInput_thana" />
+
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="471dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/PrimaryDark2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="393dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/Gray"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="393dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textViewDonationPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="71dp"
+            android:text="Shewrapara,Dhaka"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewBagOfBlood"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="113dp"
+            android:layout_marginTop="9dp"
+            android:text="Suharto Das"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="151dp"
+            android:layout_marginTop="45dp"
+            android:text="0170000000"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/ic_phone"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="44dp"
+            app:srcCompat="@drawable/smartphone" />
+
+        <ImageView
+            android:id="@+id/ic_location"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/imageViewDonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textViewBloodGrp"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/Red"
+            android:text="AB+"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

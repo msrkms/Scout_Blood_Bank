@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="188dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Suharto Das"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textposion"
+        android:layout_width="315dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="48dp"
+        android:text="San Fancisco,CA"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <TextView
+        android:id="@+id/textmail"
+        android:layout_width="315dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:text="suharto@gmail.com"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textposion" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="393dp"
+        android:layout_height="429dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="58dp"
+        android:background="@color/Gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textBloodgroup"
+            android:layout_width="351dp"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/white"
+            android:text="Blood Group"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDivision"
+            android:layout_width="159dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/textBloodgroup"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:text="Division"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDistrict"
+            android:layout_width="165dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/textBloodgroup"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="213dp"
+            android:layout_marginTop="19dp"
+            android:background="@color/white"
+            android:text="District"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textThana"
+            android:layout_width="159dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/textDivision"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:text="Thana"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textThana"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="11dp"
+            android:text="Address"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="353dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:text="address"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="20dp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/SwitchHepatitisBTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAddress"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="16dp"
+            android:textOff="Null"
+            android:textOn="Yes"
+            android:textSize="25sp"
+            android:thumb="@drawable/round_thumb"
+            app:track="@drawable/round_track" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/SwitchHIVBTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAddress"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="16dp"
+            android:textOff="Null"
+            android:textOn="Yes"
+            android:textSize="25sp"
+            android:thumb="@drawable/round_thumb"
+            app:track="@drawable/round_track" />
+
+        <TextView
+            android:id="@+id/textViewHepatitisB"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAddress"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="22dp"
+            android:text="Hepatitis B"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAddress"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="22dp"
+            android:text="HIV"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewHepatitisB"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="18dp"
+            android:text="Last Donation Date :"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewlastDonation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="178dp"
+            android:layout_marginTop="19dp"
+            android:text="13/03/2019"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SwitchHIVBTest"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/textViewlastDonation"
+            app:srcCompat="@drawable/calendar" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="368dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit" />
+
+</android.support.constraint.ConstraintLayout>

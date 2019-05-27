@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DonorDetailsActivity"
+    tools:showIn="@layout/activity_donor_details"
+    android:background="@color/Gray"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="335dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/Green"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewDonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/userde" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="334dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textViewname"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="9dp"
+            android:text="Suharto Das"
+            android:textAlignment="center"
+            android:textColor="@color/PrimaryDark2"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="49dp"
+            android:text="Blood Group :"
+            android:textColor="@color/PrimaryDark2"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textShow_blood_group"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="82dp"
+            android:text="O+"
+            android:textColor="@color/PrimaryDark2"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="6dp"
+            android:text="Last Donation:"
+            android:textColor="@color/PrimaryDark2"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textLast_Donation_date"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="-141dp"
+            android:text="02/12/18"
+            android:textColor="@color/PrimaryDark2"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="9dp"
+            android:text="Phone:"
+            android:textColor="@color/PrimaryDark2"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textShow_phone"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLast_Donation_date"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="0170000000"
+            android:textColor="@color/PrimaryDark2"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textShow_address"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="10dp"
+            android:text="687/5a North  Badda,Dhaka"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
